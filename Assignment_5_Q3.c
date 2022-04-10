@@ -22,11 +22,11 @@ int main()
 }
 
 void Reverse(){
-    char c = getchar();
-    if (c != '\n')
+    char c = getchar(); //taking input
+    if (c != '\n')//'\n' is EOF => End Of File Charactor
     {
             Reverse();
-            printf("%c",c);
+            printf("%c",c); // We can also use putchar(c) on the place of printf(). For printing. 
     }
     
 }
